@@ -1,0 +1,486 @@
+body {
+  font-size: 18px;
+  text-align: center;
+}
+
+.site_container {
+  width: 960px;
+}
+
+/* header */
+
+header {
+  position: absolute;
+  top: 0px;
+  background-color: black;
+  text-align: center;
+  width: 100%;
+}
+
+
+header .site_container {
+  color: white;
+  display: inline-flex;
+  align-items: center;
+}
+
+#logo {
+  height: 1.5rem;
+  padding-left: 0.5rem;
+  padding-right: 1rem;
+}
+
+header p {
+  font-family: helvetica;
+  font-size: 1rem;
+  padding-top: 0.66rem;
+  padding-bottom: 0.66rem;
+}
+
+/* main banner - motorcycle */
+
+.main_banner {
+  background-image: url(./images/moto.jpeg);
+  background-position: center;
+  background-size: cover;
+  height: 25rem;
+  position: absolute;
+  top: 2.32rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* the black box within - main banner - motorcycle */
+
+.site_container .promo {
+  text-align: left;
+  margin-top: 9rem;
+  background-color: black;
+  width: 26rem;
+}
+
+#new_arrival {
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: helvetica;
+  color: white;
+  padding-top: 2rem;
+  padding-left: 3rem;
+  padding-bottom: 0.25rem;
+}
+
+#promo_items {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: helvetica;
+  color: white;
+  padding-left: 3rem;
+  padding-bottom: 2rem;
+}
+
+/* red nav banner */
+
+.nav_banner {
+  background-color: firebrick;
+  position: absolute;
+  top: 27.32rem;
+  width: 100%;
+  text-align: center;
+}
+
+.nav_banner .site_container {
+  width: 960px;
+  margin: auto;
+}
+
+.nav_banner nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+ul li {
+  font-family: helvetica;
+  color: white;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+/* main section before footer */
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  width: 960px;
+  margin-top: 32.82rem;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+
+/*main section is divided into upper and lower sections */
+
+.upper_box {
+  border: 4px solid black;
+  width: 30%;
+  margin-bottom: 3rem;
+}
+
+.upper_box .image {
+  height: 13rem;
+  width: auto;
+}
+
+.upper_box.left .image {
+  background-image: url(./images/pen.png);
+  background-size: auto 9rem;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.upper_box.center .image {
+  background-image: url(./images/watch.png);
+  background-size: auto 9rem;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.upper_box.right .image {
+  background-image: url(./images/glasses.png);
+  background-size: 9rem auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.upper_box .product_name {
+  text-align: center;
+  background-color: black;
+}
+
+.upper_box .product_name p {
+  font-family: helvetica;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  color: white;
+}
+
+/* lower section - location/hours */
+
+.lower_box {
+  width: 35%;
+}
+
+.lower_box .location, .hours {
+  background-color: black;
+  text-align: left;
+}
+
+.lower_box .location, .hours p {
+  color: white;
+  padding-left: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-family: helvetica;
+}
+
+.lower_box .digits {
+  text-align: left;
+  font-family: helvetica;
+}
+
+.lower_box .digits p {
+  padding-top: 0.4rem;
+}
+
+/* footer */
+
+footer {
+  background-color: black;
+  height: 5rem;
+  margin-bottom: 0px;
+}
+
+footer .site_container {
+  margin: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+footer .site_container p {
+  color: white;
+  font-family: helvetica;
+  text-align: left;
+}
+
+/* DEFAULT size media
+
+"Menu" in NAV bar is set invisible*/
+
+@media only screen and (min-width: 1024px) {
+  .tablet_size {
+    display: none;
+  }
+}
+
+/* TABLET size media
+
+SITE Container that is set to 960px by default is mostly removed*/
+
+@media only screen and (max-width: 1024px) {
+
+/* Tablet size header */
+
+  header, .main_banner.site_container {
+    width: 100%;
+}
+
+/*black promo item box */
+
+  .site_container .promo {
+    text-align: left;
+    margin-top: 9rem;
+    background-color: black;
+    width: 20rem;
+  }
+
+  #promo_items {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: helvetica;
+    color: white;
+    padding-left: 3rem;
+    padding-bottom: 2rem;
+  }
+
+  /* Nav menu banner */
+
+  .nav_banner .site_container {
+    width: auto;
+    margin: auto;
+  }
+
+  .nav_banner nav ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  .default_size {
+    display: none;
+  }
+
+/* main product section */
+
+  .main {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    margin-top: 32.82rem;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+  }
+
+  .upper_box {
+    border: 4px solid black;
+    width: 47%;
+    margin-bottom: 3rem;
+  }
+
+  .upper_box.right {
+    display: none;
+  }
+
+  .lower_box {
+    width: 35%;
+  }
+
+}
+
+/* PHONE size media */
+
+@media only screen and (max-width: 470px) {
+
+/*header banner */
+
+  .site_container {
+    width: auto;
+}
+
+  header {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+  }
+
+  header.site_container {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+  }
+
+  header p {
+    display: none;
+  }
+
+  #logo {
+    height: 1.2rem;
+    padding-top: 1.15rem;
+    padding-bottom: 1.15rem;
+  }
+
+/* main banner */
+
+  .main_banner {
+    background-image: url(./images/moto.jpeg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 15rem;
+    position: absolute;
+    top: 3.5rem;
+  }
+
+.main_banner .site_container {
+  width: 100%;
+}
+
+/* black promo item box - moved to bottom of the main banner */
+
+.site_container .promo {
+    position: absolute;
+    bottom: 0px;
+    text-align: left;
+    background-color: black;
+    width: 100%;
+  }
+
+  .promo_text {
+    line-height: 150%;
+  }
+
+  #new_arrival {
+    font-size: 0.7rem;
+    font-family: helvetica;
+    color: white;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 0.1rem;
+  }
+
+  #promo_items {
+    font-size: 1rem;
+    font-family: helvetica;
+    color: white;
+    padding-left: 1rem;
+    padding-bottom: 1.5rem;
+  }
+
+  /* menu nav bar */
+
+  .nav_banner {
+    background-color: firebrick;
+    position: absolute;
+    top: 18.5rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav_banner .site_container {
+    width: auto;
+    margin: auto;
+  }
+
+  .nav_banner nav ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  .default_size {
+    display: none;
+  }
+
+  /* main product section - includes a lot of custom
+  cosmetic touches to account for the screen size*/
+
+  .main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: auto;
+    margin-top: 23rem;
+    margin-bottom: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .upper_box {
+    border: 4px solid black;
+    width: 90%;
+    margin-bottom: 1.6rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .upper_box.left .image {
+    background-image: url(./images/pen.png);
+    background-size: auto 7rem;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .upper_box.left p {
+    font-size: 0.9rem;
+  }
+
+  .upper_box.center {
+    display: none;
+  }
+
+  .lower_box {
+    width: 90%;
+    margin: auto;
+  }
+
+  .location, .hours {
+    border: 4px solid black;
+  }
+
+  .lower_box p {
+    font-size: 0.9rem;
+  }
+
+  .lower_box.left{
+    margin-bottom: 0.5rem;
+  }
+
+  .lower_box .location, .hours p {
+    padding-left: 0.9rem;
+    padding-top: 0.9rem;
+    padding-bottom: 0.9rem;
+  }
+
+  .digits {
+    font-weight:150;
+  }
+
+  /* footer - needed to center the text */
+
+  footer .site_container {
+    margin: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer .site_container p {
+    color: white;
+    font-family: helvetica;
+    text-align: center;
+    font-size: 0.8rem;
+  }
+}
