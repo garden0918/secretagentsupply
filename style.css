@@ -40,7 +40,7 @@ header p {
 /* main banner - motorcycle */
 
 .main_banner {
-  background-image: url(./images/moto.jpeg);
+  background-image: url(moto.jpeg);
   background-position: center;
   background-size: cover;
   height: 25rem;
@@ -133,21 +133,21 @@ ul li {
 }
 
 .upper_box.left .image {
-  background-image: url(./images/pen.png);
+  background-image: url(pen.png);
   background-size: auto 9rem;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .upper_box.center .image {
-  background-image: url(./images/watch.png);
+  background-image: url(watch.png);
   background-size: auto 9rem;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .upper_box.right .image {
-  background-image: url(./images/glasses.png);
+  background-image: url(glasses.png);
   background-size: 9rem auto;
   background-repeat: no-repeat;
   background-position: center;
