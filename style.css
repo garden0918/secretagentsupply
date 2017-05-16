@@ -334,7 +334,7 @@ SITE Container that is set to 960px by default is mostly removed*/
 /* main banner */
 
   .main_banner {
-    background-image: url(./images/moto.jpeg);
+    background-image: url(moto.jpeg);
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
@@ -426,7 +426,7 @@ SITE Container that is set to 960px by default is mostly removed*/
   }
 
   .upper_box.left .image {
-    background-image: url(./images/pen.png);
+    background-image: url(pen.png);
     background-size: auto 7rem;
     background-repeat: no-repeat;
     background-position: center;
