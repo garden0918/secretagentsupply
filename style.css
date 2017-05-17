@@ -301,7 +301,7 @@ SITE Container that is set to 960px by default is mostly removed*/
 
 /* PHONE size media */
 
-@media only screen and (max-device-width) and (max-width: 470px) {
+@media only screen and (max-device-width: 470px) and (max-width: 470px) {
 
 /*header banner */
 
